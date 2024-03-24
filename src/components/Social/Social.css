@@ -1,0 +1,186 @@
+.social-background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/wallpaperflare.com_wallpaper(3).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(90%);
+    z-index: -1;
+}
+
+
+
+.insta-icon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: .2s;
+    border: solid;
+    border-radius: 20%;
+}
+
+.insta-icon:hover{
+    height: 60px;
+    width: 60px;
+}
+
+.insta-icon-bg{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    padding: 35px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background: url(../../assets/dragonball.jpg);
+    background-position: center;
+    background-size: 135%;
+    opacity: 0.9;
+    transition: .2s;
+    animation-name: icon-a1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.github-icon{
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    transition: .2s;
+    border: solid;
+    border-radius: 20%;
+}
+
+.github-icon:hover{
+    height: 70px;
+    width: 75px;
+}
+
+.github-icon-bg{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    padding: 40px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background: url(../../assets/dragonball.jpg);
+    background-position: center;
+    background-size: 135%;
+    opacity: 0.9;
+    transition: .2s;
+    animation-name: icon-a2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.youtube-icon{
+    height: 70px;
+    width: 75px;
+    cursor: pointer;
+    transition: .2s;
+    border: solid;
+    border-radius: 20%;
+}
+
+.youtube-icon:hover{
+    height: 80px;
+    width: 85px;
+}
+
+.youtube-icon-bg{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    padding: 40px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background: url(../../assets/dragonball.jpg);
+    background-position: center;
+    background-size: 135%;
+    opacity: 0.9;
+    transition: .2s;
+    animation-name: icon-a3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+.whatsapp-icon{
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    transition: .2s;
+    border: solid;
+    border-radius: 20%;
+}
+
+.whatsapp-icon:hover{
+    height: 70px;
+    width: 70px;
+}
+
+.whatsapp-icon-bg{
+    position: absolute;
+    top: 80px;
+    left: 660px;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    padding: 40px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background: url(../../assets/dragonball.jpg);
+    background-position: center;
+    background-size: 135%;
+    opacity: 0.9;
+    transition: .2s;
+    animation-name: icon-a4;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+/* animations */
+
+@keyframes icon-a1 {
+    0%{top: 100px; left: 300px;}
+    25%{top: 102px; left: 330px;}
+    50%{top: 130px; left: 320px;}
+    75%{top: 120px; left: 300px;}
+    100%{top: 100px; left: 300px;}
+}
+
+@keyframes icon-a2 {
+    0%{top: 200px; right: 200px;}
+    25%{top: 208px; right: 178px;}
+    50%{top: 160px; right: 170px;}
+    75%{top: 160px; right: 206px;}
+    100%{top: 200px; right: 200px;}
+}
+
+@keyframes icon-a3 {
+    0%{top: 300px; left: 500px;}
+    50%{top: 350px; left: 500px;}
+    100%{top: 300px; left: 500px;}
+}
+
+@keyframes icon-a4 {
+    0%{top: 80px; left: 660px;}
+    50%{top: 80px; left: 700px;}
+    100%{top: 80px; left: 660px;}
+}

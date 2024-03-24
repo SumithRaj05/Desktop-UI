@@ -1,25 +1,24 @@
+import { Link, useNavigate } from 'react-router-dom';
 import './Home.css'
 
 function Home() {
 
-  var ExecCommand = (command) => {
-    var cmd = "cmd://'" + command + "'"
-    console.log(">> " + cmd);
-    window.location.href = cmd;
-  }
+  const navigator = useNavigate()
 
   return (
     <div className="box">
-      <div className="background-overlay"></div>
-      
+      <div className="home-background-overlay"></div>
+
       {/* <!-- center circle --> */}
       <div className="center-circle">
         <div className="center-circle-c1"></div>
         <div className="center-circle-c2"></div>
         <div className="center-circle-c3"></div>
         <div className="center-circle-c4"></div>
-        <div className="center-circle-c5" onClick={() => ExecCommand("konsole")}>
-          <p className="center-circle-text"><strong>SR</strong></p>
+        <div className="center-circle-c5">
+          <Link to="cmd://konsole">
+            <p className="center-circle-text"><strong>SR</strong></p>
+          </Link>
         </div>
       </div>
 
@@ -27,7 +26,7 @@ function Home() {
       <div className="social-circle">
         <div className="social-circle-c1"></div>
         <div className="social-circle-c2">
-          <button className="social-button">
+          <button className="social-button" onClick={() => navigator("/social")}>
             <div className="code11">
               <p className="code12">social</p>
             </div>

@@ -1,0 +1,88 @@
+.nav-box {
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    border: solid 0px;
+    border-radius: 50%;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 100;
+    animation-name: nav-icon-a;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nav-icon:hover {
+    height: 120px;
+    width: 120px;
+    top: 8px;
+    left: 8px;
+}
+
+.nav-ring {
+    background: transparent;
+    border: solid 10px transparent;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    z-index: -1;
+    transition: .8s;
+}
+
+.nav-item {
+    z-index: 1;
+    position: absolute;
+    top: 45px;
+    left: 42px;
+    transition: .5s;
+    background: black;
+    border: solid 0px;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav-item-icon{
+    transition: .2s;
+}
+.nav-item-icon:hover{
+    height: 40px;
+    width: 40px;
+}
+.nav-item:hover{
+    box-shadow: 2px 2px 20px rgb(0, 200, 255);
+}
+
+.nav-item.hovered-nav-item-1 {
+    top: -55px;
+}
+
+.nav-item.hovered-nav-item-2 {
+    left: -50px;
+}
+
+.nav-item.hovered-nav-item-3 {
+    left: 135px;
+}
+
+.nav-item.hovered-nav-item-4 {
+    top: 135px;
+}
+
+/* animation */
+
+@keyframes nav-icon-a{
+    0%{box-shadow: 3px 3px 30px #7fff00;}
+    50%{box-shadow: 1px 1px 20px black;}
+    100%{box-shadow: 3px 3px 30px #7fff00;}
+    
+}
