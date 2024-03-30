@@ -30,6 +30,7 @@ function Nav() {
                     className="nav-icon"
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
+                    onClick={() => navigator("/")}
                 />
                 <div
                     className={`nav-item ${isHovered ? 'hovered-nav-item-1' : ''}`}
@@ -43,6 +44,7 @@ function Nav() {
                     className={`nav-item ${isHovered ? 'hovered-nav-item-2' : ''}`}
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
+                    onClick={() => navigator("/social")}
                 >
                     <RiChatSmile2Fill size={35} color='white' className='nav-item-icon' />
                 </div>
@@ -50,6 +52,7 @@ function Nav() {
                     className={`nav-item ${isHovered ? 'hovered-nav-item-3' : ''}`}
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
+                    onClick={() => navigator("/games")}
                 >
                     <PiGameControllerFill size={35} color='white' className='nav-item-icon' />
                 </div>

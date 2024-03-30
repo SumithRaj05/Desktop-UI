@@ -1,0 +1,133 @@
+.games-background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/game-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(60px);
+    z-index: -1;
+}
+
+/* application 1 */
+
+.app1 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    height: 200px;
+    width: 200px;
+    background: transparent;
+}
+
+.tri1 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(98, 52, 52) 46%, #294e38 54%);
+    transform: rotate(-45deg);
+    filter: brightness(150%);
+    border: solid 0px;
+    border-radius: 55px 550px 55px 35px;
+    box-shadow: 5px 5px 20px black;
+    animation-name: games-a1;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+
+/* application 2 */
+
+.app2 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 200px;
+    width: 200px;
+    background: transparent;
+}
+
+.tri2 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(98, 52, 52) 46%, #294e38 54%);
+    transform: rotate(-45deg);
+    filter: brightness(150%);
+    border: solid 0px;
+    border-radius: 55px 550px 55px 35px;
+    box-shadow: 5px 5px 20px black;
+    animation-name: games-a1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* application 3 */
+
+.app3 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    height: 200px;
+    width: 200px;
+    background: transparent;
+}
+
+.tri3 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(98, 52, 52) 46%, #294e38 54%);
+    transform: rotate(-45deg);
+    filter: brightness(150%);
+    border: solid 0px;
+    border-radius: 55px 550px 55px 35px;
+    box-shadow: 5px 5px 20px black;
+    animation-name: games-a1;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+/* application 4 */
+
+.app4 {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    height: 200px;
+    width: 200px;
+    background: transparent;
+}
+
+.tri4 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(98, 52, 52) 46%, #294e38 54%);
+    transform: rotate(-45deg);
+    filter: brightness(150%);
+    border: solid 0px;
+    border-radius: 55px 550px 55px 35px;
+    box-shadow: 5px 5px 20px black;
+    animation-name: games-a1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* animations */
+
+@keyframes games-a1 {
+    0% {top: 10%;}
+    50% {top: 18%;}
+    100% {top: 10%;}
+}

@@ -17,7 +17,9 @@ function Home() {
         <div className="center-circle-c4"></div>
         <div className="center-circle-c5">
           <Link to="cmd://konsole">
-            <p className="center-circle-text"><strong>SR</strong></p>
+            <center>
+              <p className="center-circle-text"><strong>||श्री||</strong></p>
+            </center>
           </Link>
         </div>
       </div>
@@ -50,7 +52,7 @@ function Home() {
       <div className="gaming-circle">
         <div className="gaming-circle-c1"></div>
         <div className="gaming-circle-c2">
-          <button className="gaming-button">
+          <button className="gaming-button" onClick={() => navigator("/games")}>
             <div className="code31">
               <div className="code32"></div>
               <div className="code33"></div>
